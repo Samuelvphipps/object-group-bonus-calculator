@@ -95,7 +95,6 @@ function calculateIndividualEmployeeBonus( employee ) {
   
   employeeBonus.totalCompesation=employee.annualSalary * employeeBonus.bonusPercentage;
   
-  
   // total compensation attribute created
   //create total bonus
   
@@ -107,6 +106,7 @@ function calculateIndividualEmployeeBonus( employee ) {
   
   employeeBonus.bonusPercentage=String(employeeBonus.bonusPercentage).slice(-1);
   employeeBonus.bonusPercentage=employeeBonus.bonusPercentage+'%';
+
   return employeeBonus;
 }
 
@@ -122,3 +122,5 @@ for(let people of employees ){
   console.log(calculateIndividualEmployeeBonus(people));
 };
 
+
+//Break out bullet points in notes
